@@ -110,7 +110,7 @@ export PATH=/usr/local/bin:$PATH
 export EDITOR=nvim
 alias vim=nvim
 alias vi=nvim
-
+alias vv=nvim
 
 # user aliases 
 alias xx='clear'
