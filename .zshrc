@@ -116,6 +116,7 @@ alias vi=nvim
 alias xx='clear'
 alias ws='cd ~/workspace'
 alias sc='cd ~/go/src/github.com/irisida'
+alias ff='vifm'
 
 # git aliases 
 alias gh='git push --all origin'
