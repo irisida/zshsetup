@@ -21,7 +21,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # CASE_SENSITIVE="true"
 
 # Uncomment the following line to use hyphen-insensitive completion.
-# Case-sensitive completion must be off. _ and - will be interchangeable.
+# Case-sensitive completion must be off. _ nd - will be interchangeable.
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
@@ -122,10 +122,12 @@ alias ff='vifm'
 alias gh='git push --all origin'
 alias gb='git checkout -b'
 alias gm='git checkout main'
-alias aa='git add .'
-alias cc='git commit -m'
+alias gf='git add .'
+alias gg='git commit -m'
 alias ss='git status'
 
 
-
+# script aliases 
+alias bb='~/.myscripts/brewup.sh'
+alias cc='~/.myscripts/copycat.sh'
 
