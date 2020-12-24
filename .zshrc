@@ -103,23 +103,25 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# add to the default path 
+# add to the default path
 export PATH=/usr/local/bin:$PATH
 
+# add maven related
+export M2_HOME=/usr/local/Cellar/maven/3.6.3_1/libexec
 
-# editor update 
-export EDITOR=nvim
-alias vim=nvim
-alias vi=nvim
-alias vv=nvim
+# editor update
+#export EDITOR=nvim
+#alias vim=nvim
+alias vi=vim
+alias vv=vim
 
-# user aliases 
+# user aliases
 alias xx='clear'
 alias ws='cd ~/workspace'
 alias sc='cd ~/go/src/github.com/irisida'
 alias ff='vifm'
 
-# git aliases 
+# git aliases
 alias gh='git push --all origin'
 alias gb='git checkout -b'
 alias gm='git checkout main'
@@ -128,7 +130,15 @@ alias gg='git commit -m'
 alias ss='git status'
 
 
-# script aliases 
+# script aliases
 alias bb='~/.myscripts/brewup.sh'
 alias cc='~/.myscripts/copycat.sh'
 
+# services alias
+alias tomcatup='catalina start'
+alias tomcatdown='catalina stop'
+
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/ed/.sdkman"
+[[ -s "/Users/ed/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/ed/.sdkman/bin/sdkman-init.sh"
