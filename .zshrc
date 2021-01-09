@@ -133,6 +133,9 @@ alias ss='git status'
 # script aliases
 alias bb='~/.myscripts/brewup.sh'
 alias cc='~/.myscripts/copycat.sh'
+alias npl='~/.myscripts/npl.sh'
+alias gupd='~/.myscripts/gupd.sh'
+alias gout='~/.myscripts/gout.sh'
 
 # services alias
 alias tomcatup='catalina start'
