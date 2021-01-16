@@ -104,10 +104,11 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # add to the default path
-export PATH=/usr/local/bin:$PATH
 
-# add maven related
-export M2_HOME=/usr/local/Cellar/maven/3.6.3_1/libexec
+export PATH=/usr/local/bin:$PATH
+export PATH="$PATH:/Users/ed/.dotnet/tools"
+
+
 
 # editor update
 #export EDITOR=nvim
@@ -145,3 +146,6 @@ alias tomcatdown='catalina stop'
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/ed/.sdkman"
 [[ -s "/Users/ed/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/ed/.sdkman/bin/sdkman-init.sh"
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
