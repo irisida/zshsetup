@@ -11,6 +11,7 @@ export ZSH="/Users/ed/.oh-my-zsh"
 # ZSH_THEME="robbyrussell"
 # ZSH_THEME='half-life'
 ZSH_THEME="powerlevel10k/powerlevel10k"
+#ZSH_THEME="half-life"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
