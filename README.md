@@ -1,2 +1,3 @@
 # zshsetup
-local zshell setup for aliases, settings et al
+
+local zshell setup for aliases, settings et al.
