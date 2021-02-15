@@ -10,3 +10,4 @@ The included `.zshrc` file includes settings for:
 - themes
 - aliases
 - local scripts
+- programming languages
