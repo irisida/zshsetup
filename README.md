@@ -1,6 +1,6 @@
 # zshsetup
 
-Current machine setup uses the following:
+Current MBP machine setup uses the following:
 
 - oh-my-zsh
 - powerlevel10k
