@@ -13,11 +13,36 @@ export ZSH="/Users/ed/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 #ZSH_THEME="half-life"
 
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in $ZSH/themes/
+# If set to an empty array, this variable will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ nd - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
+
+# Uncomment the following line to disable bi-weekly auto-update checks.
+# DISABLE_AUTO_UPDATE="true"
+
+# Uncomment the following line to automatically update without prompting.
+# DISABLE_UPDATE_PROMPT="true"
+
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
+
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS="true"
+
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS="true"
+
+# Uncomment the following line to disable auto-setting terminal title.
+# DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
@@ -50,8 +75,6 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-
-# ******************
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -86,7 +109,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/usr/local/bin:$PATH
 export PATH="$PATH:/Users/ed/.dotnet/tools"
 
-
+export PATH="$PATH:/Users/ed/.flutter/flutter/bin"
 
 # editor update
 #export EDITOR=nvim
@@ -120,10 +143,14 @@ alias gout='~/.myscripts/gout.sh'
 alias tomcatup='catalina start'
 alias tomcatdown='catalina stop'
 
+alias mongo-up='brew services start mongodb/brew/mongodb-community'
+alias mongo-down='brew services stop mongodb/brew/mongodb-community'
+
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/ed/.sdkman"
 [[ -s "/Users/ed/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/ed/.sdkman/bin/sdkman-init.sh"
 
 export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+source ~/.nvm/nvm.sh
+#source $(brew --prefix nvm)/nvm.sh[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
